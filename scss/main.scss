@@ -1,0 +1,160 @@
+//* Header
+.header {
+  min-height: 100vh;
+  position: relative;
+
+  background-image: url('../images/leaf.png');
+  background-position: left center;
+  background-repeat: no-repeat;
+  background-size: 12.5%;
+
+  &__img {
+    position: absolute;
+    top: 0;
+    right: 0;
+    max-width: 43.5%;
+  }
+
+  &__top {
+    padding-top: 2rem;
+    display: flex;
+    align-items: baseline;
+
+    .header__logo {
+      max-width: 10rem;
+    }
+
+    .menu {
+      margin-left: 14%;
+      position: relative;
+      z-index: 2;
+
+      &__list {
+        display: flex;
+        align-items: center;
+      }
+
+      &__item {
+        margin: 0 2.5rem;
+      }
+
+      &__link {
+        color: var(--gray-dark);
+        font-size: 1.4rem;
+        font-weight: bold;
+        text-transform: uppercase;
+        transition: color .2s linear;
+
+        &:hover {
+          color: var(--primary-color);
+        }
+      }
+    }
+  }
+
+  &__content {
+    max-width: 55.5rem;
+    padding-top: 19rem;
+    position: relative;
+    z-index: 2;
+  }
+
+  &__content-slogan {
+    display: inline-block;
+    margin-bottom: 3rem;
+    color: var(--primary-color);
+
+    font-family: var(--secondary-font);
+    font-size: 1.6rem;
+    font-weight: 400;
+    text-transform: uppercase;
+  }
+
+  &__content-title {
+    margin-bottom: 3rem;
+    color: var(--gray-dark);
+
+    font-family: var(--secondary-font);
+    font-size: 6rem;
+    font-weight: bold;
+    line-height: 1.2;
+  }
+
+  &__content-desc {
+    margin-bottom: 5rem;
+    color: var(--gray-dark);
+    font-size: 1.5rem;
+  }
+
+  &__content-cta {
+    display: flex;
+    align-items: center;
+  }
+
+  &__content-cta > a:first-child {
+    margin-right: 5rem;
+  }
+
+  .btn__play-video {
+    display: flex;
+    align-items: center;
+
+    & > i {
+      width: 4rem;
+      height: 4rem;
+      margin-right: 1rem;
+
+      display: flex;
+      justify-content: center;
+      align-items: center;
+
+      color: var(--primary-color);
+      background-color: var(--bg-block);
+      border-radius: 5rem;
+    }
+
+    & > span {
+      color: var(--gray-dark);
+      font-size: 1.4rem;
+    }
+  }
+}
+
+//* Button 
+.btn {
+  display: inline-block;
+  padding: 1.5rem 3rem;
+  vertical-align: middle;
+
+  color: white;
+  text-align: center;
+  font-family: var(--primary-font);
+  font-size: 1.4rem;
+  text-transform: uppercase;
+
+  border: 0;
+  outline: none;
+  cursor: pointer;
+
+  &--primary {
+    background-color: var(--primary-color);
+  }
+
+  &--rounded {
+    border-radius: 5rem;
+  }
+
+  &--icon i {
+    margin-left: 1rem;
+    color: inherit;
+  }
+}
+
+/*
+  === Responsive ===
+*/
+
+
+
+
+
