@@ -807,6 +807,10 @@
 			will-change: transform;
 			transform: translateX(100%);
 
+			&.is-open {
+				transform: translateX(0);
+			}
+
 			&__close {
 				display: block;
 				position: absolute;
@@ -832,10 +836,6 @@
 				padding: 1.5rem;
 				border-bottom: thin solid #f2f2f2;
 			}
-		}
-
-		.menu.is-open {
-			transform: translateX(0);
 		}
 	}
 

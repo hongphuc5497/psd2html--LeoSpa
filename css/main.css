@@ -652,6 +652,9 @@
     will-change: transform;
     transform: translateX(100%);
   }
+  .header .menu.is-open {
+    transform: translateX(0);
+  }
   .header .menu__close {
     display: block;
     position: absolute;
@@ -672,9 +675,6 @@
     display: block;
     padding: 1.5rem;
     border-bottom: thin solid #f2f2f2;
-  }
-  .header .menu.is-open {
-    transform: translateX(0);
   }
 
   .about__inner {
