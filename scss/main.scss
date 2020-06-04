@@ -577,6 +577,22 @@
 	}
 }
 
+//* Blog
+.blog {
+	.popular__link {
+		.category {
+			margin-top: 3.5rem;
+			color: var(--gray-light);
+			font-size: 1.2rem;
+			text-transform: uppercase;
+		}
+
+		.title {
+			margin-top: 1.5rem;
+		}
+	}
+}
+
 /*
   === Responsive ===
 */
